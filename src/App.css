@@ -2,24 +2,12 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -28,15 +16,55 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list-container {
+  min-height: 3em;
+  max-height: 16.7em;
+  border-radius: 6px;
+  width: 40vw;
+  margin-top: 40px;
+  overflow-y: scroll;
+  padding: 0 20px;
+  border: 2px solid hsl(218, 13%, 38%);
 }
 
 .list-item {
   display: flex;
+  height: 3em;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button {
+  font-weight: 700;
+  color: #282c34;
+  background-color: hsl(220, 13%, 84%);
+}
+
+.list-item button {
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+}
+
+form {
+  display: flex;
+}
+
+input {
+  border: none;
+  background-color: hsl(220, 13%, 11%);
+  font-size: calc(10px + 2vmin);
+  height: calc(10px + 2vmin);
+  padding: 10px 10px;
+  margin-right: 2em;
+  border-radius: 6px;
+  color: hsl(220, 13%, 94%);
+}
+
+form button {
+  border: none;
+  font-size: calc(4px + 2vmin);
+  padding: 0 25px;
+  border-radius: 6px;
 }
